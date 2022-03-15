@@ -1,0 +1,9 @@
+simple_bus_aws_bridge:
+  credentials:
+    key: "%env(AWS_KEY)%"
+    secret: "%env(AWS_SECRET)%"
+    region: "%env(AWS_REGION)%"
+
+  queue:
+    url: "%env(AWS_QUEUE_ARN)%"
+    version: "2012-11-05"

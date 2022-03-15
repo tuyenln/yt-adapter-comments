@@ -1,0 +1,13 @@
+jms_serializer:
+    visitors:
+        xml_serialization:
+            format_output: '%kernel.debug%'
+    metadata:
+        auto_detection: false
+        directories:
+            valueobject:
+                namespace_prefix: "App\\Comment\\Domain\\ValueObject"
+                path: "%kernel.root_dir%/Comment/Application/config/serializer/valueobject"
+            entity:
+                namespace_prefix: "App\\Comment\\Domain\\Entity"
+                path: "%kernel.root_dir%/Comment/Application/config/serializer/entity"

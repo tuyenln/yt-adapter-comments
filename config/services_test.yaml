@@ -1,0 +1,5 @@
+services:
+  _defaults:
+    public: true
+
+  Test.App\Infrastructure\Repository\CommentRepository: '@App\Comment\Infrastructure\Repository\CommentRepository'
